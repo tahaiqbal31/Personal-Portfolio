@@ -1,0 +1,435 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1c1c1e;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Header Styling */
+header {
+    background-color: #1c1c1e;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #f4b400;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a i {
+    margin-right: 8px;
+}
+
+header nav ul li a:hover {
+    color: #f4b400;
+}
+
+header nav ul li a:active {
+    transform: scale(0.95);
+}
+/* Welcome Slogan Section */
+.welcome-section {
+    background-color:  #1c1c1e; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding: 100px 0; /* Padding for spacing */
+    text-align: left; /* Left align text */
+}
+
+.welcome-section h2 {
+    font-size: 48px; /* Large font size */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #ffffff; /* White color for the main text */
+    margin-left: 20px; /* Left margin for better alignment */
+}
+
+.welcome-section .highlight {
+    color: #f4b400; /* Aqua color for the highlighted text */
+}
+
+.welcome-section p {
+    font-size: 20px; /* Medium font size */
+    font-weight: 300; /* Lighter font weight */
+    color: #ffffff; /* White color for the subheading */
+    margin-top: 20px; /* Space above the subheading */
+    letter-spacing: 2px; /* Spacing between letters */
+    margin-left: 20px; /* Left margin for better alignment */
+}
+
+/* AOS Animation Initialization */
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition-property: opacity, transform;
+    transition-duration: 2s; /* Slower animation duration (2 seconds) */
+}
+
+[data-aos="fade-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+.about-section {
+    padding: 40px 0;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Space between image and text */
+    text-align: left; /* Align text to the left */
+    max-width: 1200px; /* Max width to ensure content doesn't stretch too much */
+    margin: 0 auto; /* Center the content */
+}
+
+.profile-image-container {
+    flex: 1; /* Allow the image container to grow */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.profile-image {
+    border-radius: 50%; /* Make the image circular */   
+    width: 250px; /* Set a fixed width */
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.about-text {
+    flex: 2; /* Allow text to take up more space */
+}
+
+.about-text h2 {
+    font-size: 55px; /* Adjust size for prominence */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-text p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 1.1em; /* Slightly larger font for better readability */
+    color: #bebaba;
+    font-weight: 5px;
+}
+
+
+.projects-section,
+.education-section,
+.experience-section,
+.contact-section {
+    padding: 60px 0;
+}
+.title-Pr{
+    text-align: center;
+    font-size: 35px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project-info h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #f4b400;
+}
+
+.project-info p {
+    font-size: 16px;
+}
+
+.project-info .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f4b400;
+    color: #1c1c1e;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Timeline Section */
+.timeline-section {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f4b400;
+    font-family: 'Arial', sans-serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #f4b400;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    margin: 20px 0;
+    position: relative;
+}
+
+.timeline-item .timeline-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f4b400;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    color: #1c1c1e;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.timeline-icon{
+    margin-left: 8px;
+}
+.timeline-item .timeline-content {
+    margin-left: 80px;
+    padding: 20px;
+    background-color: #2c2c2e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.timeline-item h3 span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #aaaaaa;
+}
+
+.timeline-item .timeline-date {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #f4b400;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        margin-left: 0;
+    }
+
+    .timeline-item .timeline-icon {
+        left: 50%;
+        margin-left: -25px;
+    }
+
+    .timeline-item .timeline-content {
+        margin-left: 0;
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+
+    .timeline::after {
+        left: 50%;
+    }
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    color: #fff;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.contact-info, .contact-form {
+    width: 45%;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+}
+
+.contact-info h2, .contact-form h2 {
+    font-size: 1.8rem;
+    color: #00BFFF;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #00BFFF;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00BFFF;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.resume-btn:hover {
+    background-color: #FFD700;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #00BFFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFD700;
+}
+
+
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #f4b400;
+}
