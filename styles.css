@@ -138,6 +138,51 @@ header nav ul li a:active {
     .nav-menu ul li {
         margin-bottom: 10px;
     }
+    .about-section {
+        padding: 40px 0;
+    }
+    
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left; /* Align text to the left */
+        max-width: 1200px; /* Max width to ensure content doesn't stretch too much */
+        margin: 0 auto; /* Center the content */
+    }
+    
+    .profile-image-container {
+        justify-content: center; /* Center the image */
+    }
+    
+    .profile-image {
+        border-radius: 50%; /* Make the image circular */   
+        width: 10px; /* Set a fixed width */
+        height: 10px; /* Set a fixed height */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+    
+    .about-text {
+        flex: 2; /* Allow text to take up more space */
+    }
+    
+    .about-text h2 {
+        text-align: center;
+        font-size: 55px; /* Adjust size for prominence */
+        margin-bottom: 20px; /* Space below the heading */
+        color:  #c62828;
+    }
+    
+    .about-text p {
+        line-height: 1.6; /* Improve readability */
+        margin-bottom: 15px; /* Space between paragraphs */
+        font-size: 1.1em; /* Slightly larger font for better readability */
+        color: #bebaba;
+        font-weight: 5px;
+    }
+
 }
 
 /* Welcome Slogan Section */
@@ -308,6 +353,45 @@ header nav ul li a:active {
 .btn:hover {
     background-color: #b71c1c; /* Slightly darker Red */
 }
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 40px 10px;
+    }
+
+    .title-Pr {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .projects-grid {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: space-between; /* Space out the cards */
+    }
+
+    .project-card {
+        flex: 0 0 48%; /* Two cards per row */
+        margin-right: 0; /* Remove margin to align cards properly */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
 
 .pagination {
     text-align: center;
@@ -439,18 +523,11 @@ header nav ul li a:active {
         background-color: #000;
         color: #fff;
         padding: 60px 20px;
+        display: grid;
+        flex-direction: column !important;
+     gap: 20px; /* Space between the contact info and form */
     }
-    .contact-section{
-        display: flex;
-    }
-.contact-section {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-
-    .contact-form {
-        margin-top: 20px;
-    }
-
+    
 }
 
 /* Contact Section */
